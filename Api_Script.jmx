@@ -86,7 +86,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[UC_01]_Api_POST" enabled="true">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[UC_01]_Api_POST">
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="764597751">Test Plan</stringProp>
@@ -117,12 +117,12 @@
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[UC_XX]_Api_GET" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[UC_XX]_Api_GET">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request">
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -136,7 +136,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="" elementType="Header">
                     <stringProp name="Header.name">User-Agent</stringProp>
@@ -149,7 +149,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="[RA]_JSON_login" enabled="true">
+              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="[RA]_JSON_login">
                 <stringProp name="JSON_PATH">$.login</stringProp>
                 <stringProp name="EXPECTED_VALUE">&quot;Login1&quot;</stringProp>
                 <boolProp name="JSONVALIDATION">true</boolProp>
@@ -158,7 +158,7 @@
                 <boolProp name="ISREGEX">false</boolProp>
               </JSONPathAssertion>
               <hashTree/>
-              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="[RA]_JSON_status" enabled="true">
+              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="[RA]_JSON_status">
                 <stringProp name="JSON_PATH">$.status</stringProp>
                 <stringProp name="EXPECTED_VALUE">&quot;ok&quot;</stringProp>
                 <boolProp name="JSONVALIDATION">true</boolProp>
@@ -169,7 +169,7 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[UC_XX]_Api_POST" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[UC_XX]_Api_POST">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -214,16 +214,16 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="[RA]_JSON_login" enabled="true">
+              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="[RA]_JSON_login">
                 <stringProp name="JSON_PATH">$.login</stringProp>
-                <stringProp name="EXPECTED_VALUE">${login}</stringProp>
+                <stringProp name="EXPECTED_VALUE">&quot;${login}&quot;</stringProp>
                 <boolProp name="JSONVALIDATION">true</boolProp>
                 <boolProp name="EXPECT_NULL">false</boolProp>
                 <boolProp name="INVERT">false</boolProp>
                 <boolProp name="ISREGEX">false</boolProp>
               </JSONPathAssertion>
               <hashTree/>
-              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="[RA]_JSON_password" enabled="true">
+              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="[RA]_JSON_password">
                 <stringProp name="JSON_PATH">$.password</stringProp>
                 <stringProp name="EXPECTED_VALUE">&quot;${password}&quot;</stringProp>
                 <boolProp name="JSONVALIDATION">true</boolProp>
@@ -232,7 +232,7 @@
                 <boolProp name="ISREGEX">false</boolProp>
               </JSONPathAssertion>
               <hashTree/>
-              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="[RA]_JSON_date" enabled="true">
+              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="[RA]_JSON_date">
                 <stringProp name="JSON_PATH">$.date</stringProp>
                 <stringProp name="EXPECTED_VALUE">^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$</stringProp>
                 <boolProp name="JSONVALIDATION">true</boolProp>
